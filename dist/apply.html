@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Star - Apply</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/choices.js/10.0.0/choices.min.css" integrity="sha512-ZBZn3m8/9BsOpNilGuyxqCm4HwmfC40NR0e6PZxlRgFjNgV+mh0kyaknULcuBoToULdv8zHHcnrT1e6tesoD7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+    <header class="header">
+    <div class="header__container">
+        <nav class="header-nav">
+            <ul class="header-nav__list">
+                <li class="header-nav__item active">
+                    <a href="index.html">Principala</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="catalog.html">Catalogul vedetelor</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="function.html">Cum funcționează?</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="index.html">
+            <img src="img/logo.png" alt="logo">
+        </a>
+        <div class="header-search">
+            <form class="search-form" action="#">
+                <button class="header-search__button">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 14H15.21L14.93 13.73C15.91 12.59 16.5 11.11 16.5 9.5C16.5 5.91 13.59 3 10 3C6.41 3 3.5 5.91 3.5 9.5C3.5 13.09 6.41 16 10 16C11.61 16 13.09 15.41 14.23 14.43L14.5 14.71V15.5L19.5 20.49L20.99 19L16 14ZM10 14C7.51 14 5.5 11.99 5.5 9.5C5.5 7.01 7.51 5 10 5C12.49 5 14.5 7.01 14.5 9.5C14.5 11.99 12.49 14 10 14Z" fill="#BDBDBD"/>
+                    </svg>
+                </button>
+                <input class="header-search__input" type="text" placeholder="Caută">
+            </form>
+            <a href="apply.html">Devină vedetă</a>
+
+        </div>
+
+        <div class="burger">
+            <span></span>
+        </div>
+    </div>
+</header>
+
+    <main class="apply">
+        <div class="apply-header page-header">
+            <h2>Aplică drept vedetă pe Denumire site pentru a te apropia de fanii tăi și de visele lor!</h2>
+        </div>
+        <form action="$">
+            <label for="num">
+                Numele și prenumele
+                <input type="text" name="num" placeholder="Nume">
+            </label>
+            <label for="pseudonim">
+                Pseudonimul tău *
+                <input type="text" name="pseudonim" placeholder="Nume">
+            </label>
+            <label for="phone">
+                Număr de telefon (nu se destăinuie)
+                <input type="tel" name="phone" id="" placeholder="Telefon">
+            </label>
+            <label for="email">
+                E-mail *
+                <input type="email" name="email" placeholder="E-mail">
+            </label>
+            <label for="social">
+                Unde te putem găsi? *
+                <select name="social" class="selector">
+                    <option value="ig">Instagram</option>
+                    <option value="tt">Tiktok</option>
+                </select>
+            </label>
+            <label for="nickname">
+                Pseudonimul / linkul profilului dvs. *
+                <input type="text" name="nickname" placeholder="Nickname-ul dvs">
+            </label>
+            <button>trimite</button>
+        </form>
+    </main>
+    <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__body footer-body">
+            <div class="footer-body__column footer-follow">
+                <h3>Abonează-te la newsletter</h3>
+                <p>și fii primul care află despre noi vedete pe Denumire site</p>
+                <form action="#" class="footer-follow__form">
+                    <input type="email" placeholder="E-mail">
+                    <button type="submit">Abonare</button>
+                </form>
+            </div>
+
+            <div class="footer-body__column footer-contacts">
+                <h3>Asistență clienți</h3>
+                <ul class="footer-contacts__list">
+                    <li><a href="tel:+37369302424">+373 69 302 424</a></li>
+                    <li><a href="mailto:support.aaa@gmail.com">support.aaa@gmail.com</a></li>
+                    <li><a href="#">Cum funcționează?</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-body__column footer-apply">
+                <h3>Doriți să fiți adăugat în catalogul de vedete Denumire site?</h3>
+                <a class="footer-apply__button" href="../apply.html">Da, aplică!</a>
+            </div>
+
+            <div class="footer-body__column footer-navigation">
+                <h3>Pagini utile</h3>
+                <ul class="footer-navigation__list">
+                    <li><a href="#">Termeni de utilizare</a></li>
+                    <li><a href="#">Principala</a></li>
+                    <li><a href="#">Catalogul vedetelor</a></li>
+                    <li><a href="#">Cum funcționează?</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer__footer footer-navigation">
+        <ul class="footer-navigation__list">
+            <li><a href="#">Termeni de utilizare</a></li>
+            <li><a href="/">Principala</a></li>
+            <li><a href="../catalog.html">Catalogul vedetelor</a></li>
+            <li><a href="#">Cum funcționează?</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+<!-- <footer class="footer">
+    <div class="footer__container">
+        <div class="main-footer">
+            <div class="footer-block">
+                <h3>Abonează-te la newsletter</h3>
+                <p>și fii primul care află despre noi vedete pe Denumire site</p>
+                <form action="">
+                    <input type="email" placeholder="E-mail">
+                    <button>Abonare</button>
+                </form>
+            </div>
+
+            <div class="footer-block">
+                <h3>Asistență clienți</h3>
+                <ul class="footer-block__list">
+                    <li>+373 69 302 424</li>
+                    <li>support.aaa@gmail.com</li>
+                    <li>Cum funcționează?</li>
+                </ul>
+            </div>
+            <div class="footer-block">
+                <h3>Doriți să fiți adăugat în catalogul de vedete Denumire site?</h3>
+                <a class="footer-button " href="# ">Da, aplică!</a>
+            </div>
+
+            <div class="footer-block">
+                <div class="footer-block__menu">
+                    <li>
+                        <a href="# ">Termeni de utilizare</a>
+                    </li>
+                    <li>
+                        <a href="index.html ">Principala</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html ">
+                            Catalogul vedetelor
+                        </a>
+                    </li>
+                    <li>
+                        <a href="function.html ">
+                            Cum funcționează?
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+
+        <div class="lower-footer">
+            <ul class="lower-footer__list">
+                <li>
+                    <a href="# ">Termeni de utilizare</a>
+                </li>
+                <li>
+                    <a href="index.html ">Principala</a>
+                </li>
+                <li>
+                    <a href="catalog.html ">
+                        Catalogul vedetelor
+                    </a>
+                </li>
+                <li>
+                    <a href="function.html ">
+                        Cum funcționează?
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/choices.js/10.0.0/choices.min.js" integrity="sha512-hIemrqrxSP05KiSua6nCHh8llUeS1bK7jjmcQxcQ9eZ4fHAT8zwVdEE7/mVuaWPac75JiLKEYDPCmsCyZpgVqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

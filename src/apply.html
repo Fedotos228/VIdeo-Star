@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./components/head.html', {'title': 'Video Star - Apply'})
+
+<body>
+    @@include('./components/header.html')
+
+    <main class="apply">
+        <div class="apply-header page-header">
+            <h2>Aplică drept vedetă pe Denumire site pentru a te apropia de fanii tăi și de visele lor!</h2>
+        </div>
+        <form action="$">
+            <label for="num">
+                Numele și prenumele
+                <input type="text" name="num" placeholder="Nume">
+            </label>
+            <label for="pseudonim">
+                Pseudonimul tău *
+                <input type="text" name="pseudonim" placeholder="Nume">
+            </label>
+            <label for="phone">
+                Număr de telefon (nu se destăinuie)
+                <input type="tel" name="phone" id="" placeholder="Telefon">
+            </label>
+            <label for="email">
+                E-mail *
+                <input type="email" name="email" placeholder="E-mail">
+            </label>
+            <label for="social">
+                Unde te putem găsi? *
+                <select name="social" class="selector">
+                    <option value="ig">Instagram</option>
+                    <option value="tt">Tiktok</option>
+                </select>
+            </label>
+            <label for="nickname">
+                Pseudonimul / linkul profilului dvs. *
+                <input type="text" name="nickname" placeholder="Nickname-ul dvs">
+            </label>
+            <button>trimite</button>
+        </form>
+    </main>
+    @@include('./components/footer.html')
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/choices.js/10.0.0/choices.min.js" integrity="sha512-hIemrqrxSP05KiSua6nCHh8llUeS1bK7jjmcQxcQ9eZ4fHAT8zwVdEE7/mVuaWPac75JiLKEYDPCmsCyZpgVqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

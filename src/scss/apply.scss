@@ -1,0 +1,59 @@
+.apply {
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include adaptiv-value('gap', 50, 20, 1);
+        place-content: center;
+        max-width: 730px;
+        padding: 0 15px;
+        width: 100%;
+        margin: 0 auto;
+        @media (max-width: $mobile) {
+            grid-template-columns: 1fr;
+        }
+        label {
+            position: relative;
+            input,
+            select {
+                width: 100%;
+                padding: 15px;
+                margin-top: 20px;
+                border: 1px solid #E4E4E4;
+                border-radius: 8px;
+                transition: .3s ease-in;
+                outline: none;
+                &:focus {
+                    border: 1px solid $pink;
+                }
+            }
+            select {
+                appearance: none;
+                background-image: url("../img/arrow_down.svg");
+                background-repeat: no-repeat;
+                background-position: right 1rem center;
+                background-size: 1em;
+            }
+        }
+        button {
+            width: 200px;
+            grid-column: 2 span;
+            border: 1px solid #E4E4E4;
+            border-radius: 8px;
+            padding: 20px 0;
+            text-transform: uppercase;
+            margin-left: auto;
+            transition: .3s;
+            &:hover {
+                color: #fff;
+                background-color: $pink;
+                border: 1px solid $pink;
+            }
+            @media (max-width: $mobile) {
+                grid-column: 1 span;
+            }
+            @media (max-width: $mobileSmall) {
+                width: 100%;
+            }
+        }
+    }
+}

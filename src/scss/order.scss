@@ -1,0 +1,129 @@
+.order {
+    &-header {
+        display: flex;
+        align-items: center;
+    }
+    .order-body {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
+        form {
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px 20px;
+            @media (max-width: $tablet) {
+                grid-template-columns: 1fr;
+            }
+            @media (max-width: $mobile) {
+                width: 100%;
+                grid-template-columns: repeat(2, 1fr);
+                order: 2;
+            }
+            @media (max-width: $mobileMedium) {
+                grid-template-columns: 1fr;
+            }
+            label {
+                width: 100%;
+                display: block;
+                input,
+                textarea,
+                select {
+                    display: block;
+                    font-size: 16px;
+                    width: 100%;
+                    margin-top: 20px;
+                    padding: 15px;
+                    border: 1px solid #E4E4E4;
+                    box-sizing: border-box;
+                    border-radius: 8px;
+                    outline: none;
+                    line-height: 100%;
+                }
+                input {
+                    height: 46px;
+                    grid-column: 1 span;
+                }
+                textarea {
+                    resize: none;
+                    height: 150px;
+                }
+                select {
+                    appearance: none;
+                    background-image: url("../img/arrow_down.svg");
+                    background-repeat: no-repeat;
+                    background-position: right 1rem center;
+                    background-size: 1em;
+                }
+                &:nth-child(5n+1) {
+                    grid-column: 2 span;
+                    @media (max-width: $tablet) {
+                        grid-column: 1 span;
+                    }
+                    @media (max-width: $mobile) {
+                        grid-column: 2 span;
+                    }
+                    @media (max-width: $mobileMedium) {
+                        grid-column: 1 span;
+                    }
+                }
+            }
+        }
+        .personality-order {
+            width: clamp(460px, 50%, 580px);
+            @media (max-width: $mobile) {
+                width: 100% !important;
+            }
+            .personality-card {
+                width: 100%;
+                height: 450px;
+            }
+        }
+    }
+}
+
+.order-confirm {
+    @media (max-width: $mobile) {
+        display: none;
+    }
+}
+
+.order-confirm__btn {
+    display: block;
+    width: 270px;
+    margin: 30px 0 20px;
+    padding: 20px 35px;
+    background-color: $maincolor;
+    color: $white;
+    border-radius: 8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    color: #BDBDBD;
+    letter-spacing: 0.02em;
+}
+
+.order-confirm__mobile {
+    display: none;
+    order: 3;
+    @media (max-width: $mobile) {
+        display: block;
+    }
+    .order-confirm__btn {
+        @media (max-width: $mobile) {
+            display: block;
+            margin: 30px auto 20px;
+        }
+        @media (max-width: $mobileSmall) {
+            width: 100%;
+        }
+    }
+    P {
+        text-align: center;
+    }
+}

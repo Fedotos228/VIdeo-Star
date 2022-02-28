@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Star - Comandă</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/choices.js/10.0.0/choices.min.css" integrity="sha512-ZBZn3m8/9BsOpNilGuyxqCm4HwmfC40NR0e6PZxlRgFjNgV+mh0kyaknULcuBoToULdv8zHHcnrT1e6tesoD7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+    <header class="header">
+    <div class="header__container">
+        <nav class="header-nav">
+            <ul class="header-nav__list">
+                <li class="header-nav__item active">
+                    <a href="index.html">Principala</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="catalog.html">Catalogul vedetelor</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="function.html">Cum funcționează?</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="index.html">
+            <img src="img/logo.png" alt="logo">
+        </a>
+        <div class="header-search">
+            <form class="search-form" action="#">
+                <button class="header-search__button">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 14H15.21L14.93 13.73C15.91 12.59 16.5 11.11 16.5 9.5C16.5 5.91 13.59 3 10 3C6.41 3 3.5 5.91 3.5 9.5C3.5 13.09 6.41 16 10 16C11.61 16 13.09 15.41 14.23 14.43L14.5 14.71V15.5L19.5 20.49L20.99 19L16 14ZM10 14C7.51 14 5.5 11.99 5.5 9.5C5.5 7.01 7.51 5 10 5C12.49 5 14.5 7.01 14.5 9.5C14.5 11.99 12.49 14 10 14Z" fill="#BDBDBD"/>
+                    </svg>
+                </button>
+                <input class="header-search__input" type="text" placeholder="Caută">
+            </form>
+            <a href="apply.html">Devină vedetă</a>
+
+        </div>
+
+        <div class="burger">
+            <span></span>
+        </div>
+    </div>
+</header>
+    <main class="order">
+        <div class="order__container">
+            <div class="order-header page-header">
+                <a href="profile.html" class="page-header__back"></a>
+                <h2>Detalii comandă</h2>
+            </div>
+            <div class="order-body">
+                <form action="#">
+                    <label for="dedication">
+                    Videoclipul dedicat *
+                    <select name="dedication" class="selector">
+                        <option value="someone">Pentru cineva</option>
+                        <option value="Petru">Pentru Petru</option>
+                    </select>
+                </label>
+                    <label for="forwho">
+                    Pentru cine *
+                    <input type="text" name="forwho" placeholder="Nume">
+                </label>
+                    <label for="fromwho">
+                    De la cine *
+                    <input type="text" name="fromwho" placeholder="Nume">
+                </label>
+                    <label for="data">
+                    Data (pe când trebuie videoclipul)
+                    <input type="text" name="data" placeholder="Data">
+                </label>
+                    <label for="">
+                    Motivul *
+                    <select class="multi-selector">
+                        <option value="">Cadou</option>
+                        <option value="">Dedicatie</option>
+                    </select>
+                </label>
+                    <label for="">
+                    Instrucțiuni de felicitare (maximum 300 de caractere) *
+                    <textarea name=""  placeholder="Descrieți cum voi doriți să vă felicite"></textarea>
+                </label>
+                    <label for="">
+                    Nr. de telefon *
+                    <input type="tel" placeholder="Telefon">
+                </label>
+                    <label for="">
+                    E-mail
+                    <input type="email" placeholder="E-mail">
+                </label>
+                </form>
+                <div class="personality-order">
+                    <div class="personality-card" style="background: url('img/personality.jpg') 50% 50% / cover no-repeat;">
+                        <span class="personality-label">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.33773 14.8445C6.45493 13.8741 6.85293 13.3307 7.60295 12.7737C8.6761 12.0194 10.0166 12.4461 10.0166 12.4461V9.91474C10.3425 9.90641 10.6685 9.92573 10.9909 9.97247V13.2301C10.9909 13.2301 9.65076 12.8034 8.57761 13.5581C7.828 14.1147 7.42918 14.6584 7.31239 15.6289C7.30873 16.1558 7.40762 16.8446 7.863 17.4402C7.75041 17.3825 7.63565 17.3167 7.51872 17.2429C6.51557 16.5692 6.33284 15.5587 6.33773 14.8445ZM16.5259 5.23424C15.7877 4.42529 15.5085 3.60854 15.4076 3.03479H16.3362C16.3362 3.03479 16.1511 4.53918 17.5005 6.01861L17.5193 6.0385C17.1556 5.80972 16.822 5.53968 16.5259 5.23424ZM20.9995 7.52768V10.7198C20.9995 10.7198 19.8145 10.6734 18.9375 10.4503C17.713 10.1382 16.9259 9.65965 16.9259 9.65965C16.9259 9.65965 16.3822 9.31837 16.3383 9.29457V15.8863C16.3383 16.2533 16.2378 17.1699 15.9313 17.9344C15.5313 18.9345 14.9139 19.5909 14.8004 19.7251C14.8004 19.7251 14.0496 20.6124 12.7249 21.21C11.5309 21.749 10.4826 21.7354 10.1692 21.749C10.1692 21.749 8.35704 21.8208 6.72637 20.761C6.37375 20.5275 6.04459 20.2629 5.74316 19.9708L5.7513 19.9767C7.38238 21.0364 9.19415 20.9646 9.19415 20.9646C9.50792 20.951 10.5562 20.9646 11.7498 20.4256C13.0733 19.828 13.8253 18.9407 13.8253 18.9407C13.9376 18.8065 14.5578 18.1501 14.9562 17.1496C15.2619 16.3855 15.3632 15.4685 15.3632 15.1015V8.51059C15.4072 8.53477 15.9504 8.87606 15.9504 8.87606C15.9504 8.87606 16.7379 9.35503 17.9624 9.66667C18.8398 9.88978 20.0245 9.93619 20.0245 9.93619V7.43485C20.4298 7.52573 20.7753 7.55031 20.9995 7.52768Z" fill="#EE1D52"/>
+                                    <path d="M20.0256 7.43485V9.93541C20.0256 9.93541 18.841 9.889 17.9636 9.66589C16.7391 9.35386 15.9516 8.87528 15.9516 8.87528C15.9516 8.87528 15.4083 8.53399 15.3644 8.50981V15.1023C15.3644 15.4693 15.2638 16.3863 14.9574 17.1504C14.5574 18.1509 13.94 18.8073 13.8265 18.9415C13.8265 18.9415 13.0752 19.8288 11.751 20.4264C10.5574 20.9654 9.50908 20.9518 9.19532 20.9654C9.19532 20.9654 7.38355 21.0372 5.75246 19.9774L5.74433 19.9716C5.57212 19.8048 5.41002 19.6288 5.25883 19.4442C4.73833 18.8096 4.41928 18.0592 4.3391 17.8451C4.33897 17.8442 4.33897 17.8432 4.3391 17.8423C4.2101 17.4702 3.93907 16.5767 3.9761 15.7112C4.04162 14.1841 4.5788 13.2469 4.72083 13.0121C5.09698 12.3718 5.58621 11.7989 6.16675 11.3189C6.67903 10.9047 7.2597 10.5752 7.88491 10.3438C8.5608 10.0721 9.28455 9.92649 10.0174 9.91474V12.4461C10.0174 12.4461 8.67685 12.021 7.60412 12.7737C6.85409 13.3307 6.45609 13.8741 6.33889 14.8445C6.334 15.5586 6.51673 16.5692 7.51906 17.2432C7.63599 17.3173 7.75076 17.3831 7.86335 17.4406C8.03845 17.6682 8.25158 17.8666 8.49413 18.0276C9.47327 18.6474 10.2937 18.6907 11.3428 18.2882C12.0424 18.019 12.569 17.4125 12.8132 16.7405C12.9666 16.3208 12.9645 15.8984 12.9645 15.4615V3.03479H15.4063C15.5072 3.60854 15.7864 4.42529 16.5246 5.23424C16.8207 5.53968 17.1543 5.80972 17.518 6.0385C17.6254 6.14966 18.1748 6.69923 18.8801 7.03662C19.2447 7.21102 19.6291 7.34464 20.0256 7.43485Z" fill="white"/>
+                                    <path d="M3.36719 17.0677V17.0697L3.42778 17.2339C3.42082 17.2148 3.3983 17.1567 3.36719 17.0677Z" fill="#69C9D0"/>
+                                    <path d="M7.88461 10.3437C7.25939 10.5751 6.67873 10.9047 6.16644 11.3188C5.58572 11.7999 5.09661 12.374 4.72093 13.0155C4.57891 13.2495 4.04172 14.1876 3.9762 15.7146C3.93917 16.5801 4.2102 17.4737 4.33921 17.8458C4.33907 17.8467 4.33907 17.8476 4.33921 17.8485C4.4206 18.0607 4.73843 18.8112 5.25893 19.4477C5.41012 19.6322 5.57222 19.8083 5.74443 19.975C5.19268 19.6093 4.7006 19.1671 4.28427 18.6629C3.76825 18.0338 3.45001 17.2912 3.36699 17.072C3.36689 17.0704 3.36689 17.0688 3.36699 17.0673V17.0645C3.23758 16.6928 2.96573 15.7989 3.00358 14.9322C3.0691 13.4052 3.60628 12.4679 3.74831 12.2331C4.12388 11.5915 4.613 11.0174 5.19382 10.5364C5.706 10.1221 6.28669 9.79254 6.91199 9.56131C7.30202 9.40621 7.70833 9.29179 8.1239 9.22002C8.75019 9.11524 9.38984 9.10616 10.0191 9.19311V9.91469C9.2856 9.92619 8.56113 10.0718 7.88461 10.3437Z" fill="#69C9D0"/>
+                                    <path d="M15.4078 3.03476H12.9661V15.4619C12.9661 15.8987 12.9661 16.32 12.8147 16.7408C12.5681 17.4125 12.0435 18.019 11.3444 18.2881C10.2948 18.6922 9.47442 18.6474 8.49569 18.0276C8.25273 17.8673 8.03905 17.6696 7.86328 17.4425C8.69713 17.8688 9.44349 17.8614 10.3681 17.5057C11.0668 17.2366 11.5922 16.6301 11.838 15.958C11.9919 15.5383 11.9898 15.1159 11.9898 14.6795V2.25H15.3615C15.3615 2.25 15.3236 2.55891 15.4078 3.03476ZM20.0252 6.74328V7.43483C19.6293 7.34447 19.2456 7.21085 18.8816 7.0366C18.1764 6.69921 17.627 6.14964 17.5195 6.03848C17.6442 6.11693 17.7736 6.1883 17.907 6.25222C18.7644 6.66255 19.6089 6.78502 20.0252 6.74328Z" fill="#69C9D0"/>
+                                </svg>
+                            </span>
+                        <div class="personality-details">
+                            <span class="personality-name">nekoglai</span>
+                            <div class="personality-price">
+                                <span>1 500</span>
+                                <span>mld</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-confirm">
+                        <a class="order-confirm__btn" href="order-completion.html">Confirmare comandă</a>
+                        <p>* Continuând, sunteți de acord cu Termenii și condițiile platformei Denumire site și cu Politica de confidențialitate</p>
+                    </div>
+                </div>
+                <div class="order-confirm__mobile">
+                    <a class="order-confirm__btn" href="order-completion.html">Confirmare comandă</a>
+                    <p>* Continuând, sunteți de acord cu Termenii și condițiile platformei Denumire site și cu Politica de confidențialitate</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__body footer-body">
+            <div class="footer-body__column footer-follow">
+                <h3>Abonează-te la newsletter</h3>
+                <p>și fii primul care află despre noi vedete pe Denumire site</p>
+                <form action="#" class="footer-follow__form">
+                    <input type="email" placeholder="E-mail">
+                    <button type="submit">Abonare</button>
+                </form>
+            </div>
+
+            <div class="footer-body__column footer-contacts">
+                <h3>Asistență clienți</h3>
+                <ul class="footer-contacts__list">
+                    <li><a href="tel:+37369302424">+373 69 302 424</a></li>
+                    <li><a href="mailto:support.aaa@gmail.com">support.aaa@gmail.com</a></li>
+                    <li><a href="#">Cum funcționează?</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-body__column footer-apply">
+                <h3>Doriți să fiți adăugat în catalogul de vedete Denumire site?</h3>
+                <a class="footer-apply__button" href="../apply.html">Da, aplică!</a>
+            </div>
+
+            <div class="footer-body__column footer-navigation">
+                <h3>Pagini utile</h3>
+                <ul class="footer-navigation__list">
+                    <li><a href="#">Termeni de utilizare</a></li>
+                    <li><a href="#">Principala</a></li>
+                    <li><a href="#">Catalogul vedetelor</a></li>
+                    <li><a href="#">Cum funcționează?</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer__footer footer-navigation">
+        <ul class="footer-navigation__list">
+            <li><a href="#">Termeni de utilizare</a></li>
+            <li><a href="/">Principala</a></li>
+            <li><a href="../catalog.html">Catalogul vedetelor</a></li>
+            <li><a href="#">Cum funcționează?</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+<!-- <footer class="footer">
+    <div class="footer__container">
+        <div class="main-footer">
+            <div class="footer-block">
+                <h3>Abonează-te la newsletter</h3>
+                <p>și fii primul care află despre noi vedete pe Denumire site</p>
+                <form action="">
+                    <input type="email" placeholder="E-mail">
+                    <button>Abonare</button>
+                </form>
+            </div>
+
+            <div class="footer-block">
+                <h3>Asistență clienți</h3>
+                <ul class="footer-block__list">
+                    <li>+373 69 302 424</li>
+                    <li>support.aaa@gmail.com</li>
+                    <li>Cum funcționează?</li>
+                </ul>
+            </div>
+            <div class="footer-block">
+                <h3>Doriți să fiți adăugat în catalogul de vedete Denumire site?</h3>
+                <a class="footer-button " href="# ">Da, aplică!</a>
+            </div>
+
+            <div class="footer-block">
+                <div class="footer-block__menu">
+                    <li>
+                        <a href="# ">Termeni de utilizare</a>
+                    </li>
+                    <li>
+                        <a href="index.html ">Principala</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html ">
+                            Catalogul vedetelor
+                        </a>
+                    </li>
+                    <li>
+                        <a href="function.html ">
+                            Cum funcționează?
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+
+        <div class="lower-footer">
+            <ul class="lower-footer__list">
+                <li>
+                    <a href="# ">Termeni de utilizare</a>
+                </li>
+                <li>
+                    <a href="index.html ">Principala</a>
+                </li>
+                <li>
+                    <a href="catalog.html ">
+                        Catalogul vedetelor
+                    </a>
+                </li>
+                <li>
+                    <a href="function.html ">
+                        Cum funcționează?
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js" integrity="sha512-EqNNJuepkw5P9vxCml8eBk7C4Ld+4kAnvzOD/jG21rkxWPILGoQa5EvD62UieiJF0u3xoQrcVnce4i83VnYj/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/choices.js/10.0.0/choices.min.js" integrity="sha512-hIemrqrxSP05KiSua6nCHh8llUeS1bK7jjmcQxcQ9eZ4fHAT8zwVdEE7/mVuaWPac75JiLKEYDPCmsCyZpgVqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

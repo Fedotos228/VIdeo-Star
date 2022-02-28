@@ -1,0 +1,147 @@
+.profile {
+    &-header {
+        display: flex;
+        align-items: center;
+        background: #F5F6FF;
+        border-radius: 12px;
+        padding: 22px;
+        h2 {
+            font-weight: 500;
+            line-height: 28px;
+        }
+    }
+    .profile-header__labels {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: right;
+        gap: 20px;
+        @media (max-width: $mobileSmall) {
+            display: none;
+        }
+        .profile-label {
+            width: 44px;
+            height: 44px;
+            padding: 10px;
+            background: $white;
+            border-radius: 8px;
+            cursor: pointer;
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    .profile-personality {
+        position: relative;
+        display: flex;
+        gap: 50px;
+        margin: 30px 0 60px;
+        @media (max-width: $tablet) {
+            flex-direction: column;
+        }
+        img {
+            max-width: 500px;
+            height: 100%;
+            @media (max-width: $mobileSmall) {
+                width: 100%;
+            }
+        }
+        .profile-labels {
+            display: none;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            @media (max-width: $mobileSmall) {
+                display: flex;
+                .profile-label {
+                    background: rgba(255, 255, 255, 0.3);
+                    backdrop-filter: blur(4px);
+                    svg {
+                        path {
+                            fill: $white;
+                        }
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+        .personality-details {
+            h1 {
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 140%;
+                margin-bottom: 20px;
+            }
+            p {
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: #757575;
+                margin-bottom: 20px;
+                &:last-of-type {
+                    margin-bottom: 30px;
+                }
+            }
+            .personality-footer {
+                display: inline-block;
+                span {
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 28px;
+                    color: $pink;
+                    margin-right: 30px;
+                }
+                a {
+                    padding: 15px 30px;
+                    border: 1px solid #E4E4E4;
+                    box-sizing: border-box;
+                    border-radius: 8px;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+.videos-exemples {
+    margin-bottom: 60px;
+    h2 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+    .videos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        @media (max-width: $tablet) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        @media (max-width: $mobileSmall) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .video-item {
+            width: 100%;
+            a {
+                display: block;
+                width: 100%;
+                margin-bottom: 20px;
+                video {
+                    width: 100%;
+                    height: 425px;
+                    @media (max-width: $mobileMedium) {
+                        height: 300px;
+                    }
+                }
+            }
+            p {
+                color: #757575;
+                line-height: 160%;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.order-completion {
+    &__header {
+        padding: 30px;
+    }
+    .order-congrats {
+        margin-bottom: 50px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 100%;
+        color: #757575;
+    }
+    .order-details {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 100px;
+        flex-wrap: wrap;
+    }
+    .detail-order {
+        margin-bottom: 20px !important;
+    }
+    .personality-order__details {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        .personality-card {
+            width: 220px;
+            @media (max-width: $mobileSmall) {
+                width: 100%;
+            }
+        }
+        .order-detail__block {
+            @media (max-width: $mobileSmall) {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            .order-detail {
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+                span {
+                    display: block;
+                    max-width: 620px;
+                    line-height: 160%;
+                }
+            }
+        }
+    }
+}

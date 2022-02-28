@@ -1,0 +1,169 @@
+.categories {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    &-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+        border: 1px solid #E4E4E4;
+        border-radius: 12px;
+        padding: 10px 20px 10px 15px;
+        transition: .2s ease-in;
+        svg {
+            width: 20px;
+            height: 20px;
+            path {
+                fill: $maincolor;
+            }
+        }
+        &.active,
+        &:hover {
+            background-color: $pink;
+            color: $white;
+            border: 1px solid $pink;
+            svg {
+                path {
+                    fill: $white;
+                }
+            }
+        }
+        &:nth-child(9) {
+            &.active,
+            &:hover {
+                svg {
+                    path {
+                        stroke: $maincolor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.catalog {
+    margin: 30px 0;
+    .catalog-filter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        h3 {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+        }
+        .sort {
+            position: relative;
+            &.open {
+                .sort__header {
+                    svg {
+                        transform: translateY(-1px) rotate(180deg);
+                    }
+                }
+                .sort__list {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(10px);
+                }
+            }
+            &__header {
+                padding: 15px 30px;
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                border-radius: 8px;
+                cursor: pointer;
+                span {
+                    -moz-user-select: none;
+                    -webkit-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                }
+                svg {
+                    transition: .3s;
+                    transform: translateY(-1px);
+                }
+            }
+            &__list {
+                background-color: #fff;
+                border-radius: 8px;
+                position: absolute;
+                text-align: left;
+                width: 100%;
+                z-index: 3;
+                transform: translateY(30px);
+                opacity: 0;
+                visibility: hidden;
+                transition: .3s;
+                li {
+                    padding: 12px 30px;
+                    transition: .3s;
+                    width: 100%;
+                    position: relative;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $pink;
+                        color: #fff;
+                        &:first-child {
+                            border-radius: 8px 8px 0 0;
+                        }
+                        &:last-child {
+                            border-radius: 0 0 8px 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .catalog-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        .personality-card {
+            width: 100%;
+        }
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    .pagination-arrows,
+    .pagination-list__item {
+        text-align: center;
+        width: 48px;
+        height: 48px;
+        padding: 15px;
+        border: 1px solid #E4E4E4;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .pagination-arrows {
+        content: url('../img/chevron_right.svg');
+        &:first-child {
+            transform: rotate(-180deg);
+        }
+    }
+    .pagination-list {
+        display: flex;
+        gap: 10px;
+        .pagination-list__item {
+            transition: .3s;
+            &:hover {
+                background-color: $pink;
+                color: $white;
+                border: 1px solid $pink;
+            }
+            &.active {
+                background-color: $pink;
+                color: $white;
+                border: 1px solid $pink;
+            }
+        }
+    }
+}
